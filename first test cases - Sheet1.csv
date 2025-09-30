@@ -1,0 +1,179 @@
+Feature,Test Case ID,Test Case Description,Pre-condition,Test Steps,Test Data,Expected Result,Actual Result,Status
+Registration,TC01,Verify that the design of the registration page should be as per the figma,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","""1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.""",N/A,UI should be as per the figma design.,As Expected,PASS
+,TC02,Verify that the all required fields should have the star marked .,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","""1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.""",N/A,all required fields marked with asterisk (*).,required field not marked with the asterisk ,FAIL
+,TC03,Verify that user should not login with empty fields.,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","Tap on login button without entering name , email and password",N/A,user should not be login with empty fields,User not logged with empty fields.,PASS
+,TC04,Verify that user should get a front-end error message when he login with empty fields.,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","Tap on login button without entering name , email and password",N/A,user should get front end error message below every mandatory fields,user only get an error below the email field.,FAIL
+,TC05,Verify the user should not be login with invalid email address,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Tap of login button only enter an invalid email.,Email: !@#$%^&&,user should not be login with invalid Email .,user not logged with invalid Email.,PASS
+,TC06,Verify that user get a front end error message when he enter an invalid Email.,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Tap on login button only enter an invalid email.,Email: !@#$%^&&,user should get an error message below the email field,user get an error message below the email field,PASS
+,TC06,Verify that user should not be login with empty phone no fields,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Tap on login button with all info expected phone no ,"name: vinay singh
+email: vinay@gmail.com
+password:21234
+",user should not login without enter phone no,user not logged in without phone no,PASS
+,TC07,verify that user cannot login with invalid phone no ,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Tap on login button with all info with invalid phone no,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 111111111",user should not login with an invalid phone no.,user not logged in with an invalid phone no ,PASS
+,TC08,verify that user should get a front end message when he enter a weak password,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Tap on login Button with all correct information entered,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",user should get a front end message for weak password,user not get any weak password message below the password field,FAIL
+,TC09,verify that user should not login with already used email .,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",tap on login with all correct info,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",user should not login with already  used email,user not logged in with already used email,PASS
+,TC10,verify that user get a error message when he enter the already use email ,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",tap on login button with all info and already used email,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",user should get an error message for already used email address,user get an error message for used email address,PASS
+,TC11,verify that user get an error message below the phone no field for already  used no ,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Tap on login button with already used phone no.,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",User should get an error message of phone no already used below the phone no field,user get an error message below the phone no field ,PASS
+,TC12,verify that user should not login without terms and condition box checked,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",tap the login button without checked terms and condition box,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",user should not login without checked terms and condition box,user not logged in without checked terms and condition box,PASS
+,Tc13,verify that user should not logging with mismatched password,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",tap the login button with mismatched password,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",user should not log in with mismatched password,user not logged in with mismatched password,PASS
+,TC14,Verify that user should get error message for mismatched password,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Hit the login Button with mismatched password,"""name: vinay singh
+email: vinay@gmail.com
+password:21234
+phone no: 9111111111",User should gets an error message for mismatched password,User gets an error message for mismatched password,pass
+,TC15,Verify that user should not log in without entering password and confirm password,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Hit the login button without entering password and confirm password,"""name: vinay singh
+email: vinay@gmail.com
+
+phone no: 9111111111",User should gets an error message for log in without password and confirm password,User gets a error message for login without password and confirm password,PASS
+,TC16,verify that user should not log in without entering confirm password,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Hit the login button without entering the confirm password,"""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111",User should gets an error message for not entering confirm password,User gets an error message for empty confirm password,PASS
+,TC17,Verify that user should not Register without selecting any preparation method,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",press the login button without selecting preparation method,"""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111",User should get an error message for not selecting any preparation method ,User gets an error message for not selecting any preparation method,PASS
+,TC18,Verify that user should register with selecting hindi as preparation method ,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","Press the Register button with all valid information and selecting preparation method as ""HINDI""","""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111
+
+Preparation method:HINDI","User should login with preparation method as ""HINDI""","User successfully login with preparation method as ""HINDI""",PASS
+,TC19,Verify that user should Register with selecting ENGLISH as preparation method,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","Press the Register button with all valid information and selecting preparation method as ""ENGLISH""","""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111
+
+Preparation method:ENGLISH","User should login with preparation method as ""ENGLISH""","User successfully login with preparation method as ""ENGLISH""",PASS
+,TC20,verify that user should not be able to log in without selecting any state field,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Press the Register button with all valid information and  keep the state field empty,"""""""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111
+
+Preparation method:ENGLISH""",User should not log be able to log in with empty state field,user did not able to login with empty state field,pass
+,TC21,Verify that user should get an error message for not selecting state field,"1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.",Press the Register button with all valid information and  keep the state field empty,"""""""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111
+
+Preparation method:ENGLISH""",User should get an error message for empty state field,User gets an error message for empty state field,pass
+,TC22,"Verify that user should login with selectin state ""MADHYA PRADESH""","1.user have to launched the url of that web.
+2.User have tapped on login button.
+3.User have tapped on Register now button.","Press the Register button with all valid info and select state ""madhya pradesh""","""""""name: vinay singh
+email: vinay@gmail.com
+password:12345
+phone no: 9111111111
+
+Preparation method:ENGLISH""
+
+STATE: MADHYA PRADESH",User should be able to log in ,User logged in with the selecting state madhya pradesh,pass
+HOME,TC23,Verify that the logo should be present in top left corner,Home page should be open,"1.open url of drishti ias 
+2.look out in the home page ",N/A,Logo should be present in top left corner ,logo is present in the top left corner,PASS
+,TC24,Verify that logo should be aligned with figma design,Home page should be open,"1.open url of drishti ias 
+2.look out in the home page ",N/A,logo should be as per the figma design,logo is as per the figma disgn,PASS
+,TC25,Verify that in home page there should be home page button on the top center ,Home page should be open,"1.open url of drishti ias 
+2.look out in the home page ",N/A,there shold be a home page nevigation button in top center,there is a home page nevigation button in top center,PASS
+,TC26,Verify that when user click the home button then the home should be open ,home page should be open ,"1.open url of drishti ias 
+2.click on the home button",N/A,when user cick on the home button it should open the home page,when user click the home page button the home page is open,PASS
+,TC27,Verify that the BLOG button appears in the right side of the home button in top center,Home page should be open ,"1.open url of drishti ias 
+2.click on the home button",N/A,BLOG button should be appears in right side of the home button in top center,BLOG button is appears in the right side of the home button ,PASS
+,TC28,Verify that when user click the BLOG button the blog page should be open,"1.Home page should be open 
+","1.Home page should be open 
+2.click on the BLOG button  ",N/A,when user click the BLOG button the blog should be opne ,BLOG page open when user click the blog button,PASS
+,TC29,Verify that classroome programe button appears in top center,1.home page should be opned,home should be open ,N/A,classroome programe button appears in top center ,CLASSROOME PROGRAME button is appears in the top center,PASS
+,TC30,Verify that when user press the classroome programe buttone it should open classroome programe page,1Home page should be open,"1.go to home page
+2.click on the classroome programe button",N/A,when user click the class roome programe button then the page should be open,when user click the button the classroome programe page opend,PASS
+,TC31,verify that when user click the classroome programe button it should be open as new page ,"1.Home page should be open .
+2.user should click on the classroome programe button","1.Home page should be open .
+2.user should click on the classroome programe button",N/A,when the user clicks on the classroome programe button then it should open as new page,when user clicks the classroome programe button it is open as new page,PASS
+,TC32,verify the visual alignment of the 'Interview Guidance' button - it should be Horizontally centered and positioned at the top of the viewport,User has successfully accessed the application and the home page is fully loaded.,"1.Open the application URL in a supported browser
+2.Wait for the Home page to load completely.
+3.Observe the UI layout for the presence of the ""interview Guidance"" button",N/A,"the ""Interview GUidance"" button should be clearly visible on the Home pafe and positioned as per disign specifications.","the ""Interview Guidance"" button is clearly visible on the Home page .",PASS
+,TC33,"Verify that ""interview Guidance"" button appears on the Home page and triggers the expected action upon clicking",User has successfully accessed the application and the home page is fully loaded.,"1.Open the application URL in a supported browser
+2.Wait for the Home page to load completely.
+3.Observe the UI layout for the presence of the ""interview Guidance"" button
+4.click the ""Interview Guidance"" button.
+5.Observ the behavior after clicking.",N/A,"The ""interview guidance "" button should respond to the click event and it should nevigate to a new page.","The ""Interview guidance "" button is visible on the Home page and successfully triggers the expected action upon clicking.",PASS
+,TC34,"Verify that ""interview guidance"" button should change its background color when the arrow hovor.",User has successfully accessed the application and the home page is fully loaded.,"1.Open the application URL in a supported browser
+2.Wait for the Home page to load completely.
+3.Observe the UI layout for the presence of the ""interview Guidance"" button",N/A,"the ""interview guidance"" button should change its background colour to RED.",it changes the backgroun colour to RED.,PASS
+,TC35,"Verify the ""online programe""button appears on the Home page and trigger the expected action upon clicking",User has successfully accessed the application and the home page is fully loaded.,"1.Open the application URL in a supported browser
+2.Wait for the Home page to load completely.
+3.Observe the UI layout for the presence of the ""Online programe"" button
+4.click the ""Online programe"" button.
+5.Observ the behavior after clicking.",N/A,"1.the ""Online programe"" button should be clearly visible on the Home pafe and positioned as per disign specifications.
+2.the ""Online programe"" button should respond to the click event and it should nevigates to a new page.
+","The ""Online programe "" button appears on the Home page and aligned as per the design and respond upon when user click.",PASS
+,TC35,"Verify that the ""Login ""button should appears as per the design and it triggers the expected action upon clicking",User has successfully accessed the application and the home page is fully loaded.,"1.Open the application URL in a supported browser
+2.Wait for the Home page to load completely.
+3.Observe the UI layout for the presence of the ""Login"" button.
+4.click the ""login"" button .
+5. Observe the respond after clicking.",N/A,"The ""login"" button should be visible on the Home page, positioned correctly, and upon clicking, should navigate to a new page as intended.","The ""login"" button is clearly visible on the Home Page, positioned as per design and successfully navigates to the intended page when cicked.",PASS
